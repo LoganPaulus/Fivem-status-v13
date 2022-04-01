@@ -17,8 +17,8 @@ module.exports.data = new SlashCommandBuilder()
 module.exports.run = (bot, interaction, options) => {
     Gamedig.query({
         type: 'fivem',
-        host: `${host}`, // Server IP here
-        port: `${port}` // Server Port here             
+        host: `${host}`, 
+        port: `${port}`              
       }).then(async(state) => {
         const maxplayers = state.maxplayers;
       server.getPlayers().then((data) => {

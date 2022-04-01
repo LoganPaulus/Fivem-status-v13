@@ -12,13 +12,13 @@ module.exports.data = new SlashCommandBuilder()
 module.exports.run = (bot, interaction, options) => {
   Gamedig.query({
         type: 'fivem',
-        host: `${host}`, // Server IP here
+        host: `${host}`, 
         port: `${port}` // Server Port here              
     }).then(async(state) => {
 
  let embed = new MessageEmbed()
     .setDescription(`The current AOP is ${state.map}`)
-    .setColor(aopColor) // wooow, random
+    .setColor(aopColor) 
     .setTimestamp();
     const row = new MessageActionRow()
     .addComponents(
