@@ -11,7 +11,7 @@ const server = new fivem.DiscordFivemApi(serverIp);
 const {SlashCommandBuilder} = require("@discordjs/builders")
 module.exports.data = new SlashCommandBuilder()
 .setName(statusCommandName)
-.setDescription("sends FiveM AOP to Discord(channel)");
+.setDescription("sends FiveM player count to Discord(channel)");
 
 
 module.exports.run = (bot, interaction, options) => {
