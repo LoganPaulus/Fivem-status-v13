@@ -13,7 +13,7 @@ const { GuildId } = require('./config.js');
 const { AopChannelId } = require('./config.js');
 const { PlayerCountChannelId } = require('./config.js');
 let commands = require("./slash-commands").commands;
-require("./slash-commands")()
+require("./slash-commands")(true)
 
 bot.on('ready', () => {
     bot.user.setStatus('dnd')
